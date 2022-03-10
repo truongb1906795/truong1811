@@ -1,15 +1,15 @@
-// const { default: mongoose } = require("mongoose");
+const { default: mongoose } = require("mongoose");
 const app = require("./app");
 const config = require("./app/config");
 
-// mongoose.connect("mongodb+srv://BangTrinh:0052trinh@cluster0.axw16.mongodb.net/trinhb1906789?retryWrites=true&w=majority")
-//     .then(() => {
-//         console.log("Connected to the database!!");
-//     })
-//     .catch((error) => {
-//         console.log(error);
-//         process.exit();
-//     });
+mongoose.connect("mongodb+srv://b1906795:0052truong@cluster0.cxx3t.mongodb.net/Truongne?retryWrites=true&w=majority")
+    .then(() => {
+        console.log("Connected to the database!!");
+    })
+    .catch((error) => {
+        console.log(error);
+        process.exit();
+    });
 
 
 const PORT = config.app.port;
